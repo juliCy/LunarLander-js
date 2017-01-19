@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lunar Lander</title>
+ 		<meta charset="UTF-8">
+ 		<meta name="description" content="Juego hecho con JavaScript">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+ 		<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+ 		<script src="js/jsjs.js"></script> 
+	</head>
+
+	<body id="contenedor">
+
+	<div id="nave">
+		<img id="inave" src="img/nave.png" alt="img nave">
+	</div>
+
+	<div id="izquierda">
+		<div id="cpanel">
+			<div class="controlesNave">Velocidad:<br><b><span id="velocidad">100</span></b> m/s</div>
+			<div class="controlesNave">Fuel:<br><b><span id="fuel">100</span></b> %</div>
+			<div class="controlesNave">Altura:<br><b><span id="altura">60</span></b> m</div>
+		</div>
+	</div>
+
+	<div id="zonaAterrizaje"><img src="img/moon.jpg" alt="luna" id="luna"></div>
+
+	<div id="derechaSmartphone">
+		<div id="reanudaSmartphone"><p>Play</p></div>
+		<div id="pausaSmartphone">Menú</div>
+		<div id="reiniciaSmartphone"><p></p></div>
+		<div id="ayudaSmartphone"><p>Ayuda</p></div>
+		<div id="botonAjustesSmartphone"><p></p></div>
+	</div>
+
+	<div id="derecha">
+		<div id="reanudar"><p>Play</p></div>
+		<div id="pausa">Pausar</div>
+		<div id="instrucciones"><p>Ayuda</p></div>
+		<div id="botonAjustes"><p></p></div>
+	</div>
+
+	<div id="gameOver">
+		<h2>¡GAME OVER!</h2>
+		¡Inténtalo de nuevo! <br>
+		La velocidad de la nave no debe superar los 5 m/s<br><br>
+		<button id="jugarOtraVez"><h3>Probar otra vez</h3></button>
+		<button id="jugarOtraVezSmartphone"><h3>Probar otra vez</h3></button>
+		<br><br>
+		<br><br>
+	</div>
+
+	<div id="userWin">
+		<h2>¡CONGRATULACIONES!</h2>
+		¡Bien calculado!<br><br>
+		<button id="jugarAgain"><h3>Jugar otra vez</h3></button>
+		<button id="jugarAgainSmartphone"><h3>Jugar otra vez</h3></button><br><br>
+	</div>
+
+	<div id="menuInstrucciones">
+		<a href="#" onclick="ocultarInstrucciones();"><img id="close" src="img/close.png" alt="close"></a>
+		<h3>INSTRUCCIONES</h3>
+		<p>El juego trata de frenar la caida del marciano en la base de la luna apretando el <b>espacio</b> o <b>clickando en la pantalla</b> en ambas versiones, para que esta pueda aterrizar adecuadamente sobre la base de la luna.<br><br>Se tiene que llegar a la base a una<b>velocidad inferior a los 5 m/s</b>o la se estrellará y se dara el juego por perdido.<br><br> Se dispone de un medidor de gasolina que se acabará a medida que usemos el motor de la nave.</p>
+		<a href="acerca.html"><button><h3>Acerca de...</h3></button></a>
+	</div>
+	</body>
+</html>
